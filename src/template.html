@@ -12,6 +12,7 @@
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link rel="apple-touch-icon" href="logo-192.png">
 	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+
 	<!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
@@ -27,9 +28,9 @@
 	%sapper.head%
 </head>
 <body>
-	<!-- The application will be rendered inside this element,
-	     because `src/client.js` references it -->
-	<div id="sapper">%sapper.html%</div>
-	<script src="vendor/jquery/jquery.min.js"></script>
+<!-- The application will be rendered inside this element,
+     because `src/client.js` references it -->
+<div id="sapper">%sapper.html%</div>
+<script src="vendor/jquery/jquery.min.js"></script>
 </body>
 </html>
