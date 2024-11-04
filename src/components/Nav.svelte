@@ -61,9 +61,9 @@
 <nav>
 	<ul>
 		{#if $session.token}
-			<li><a aria-current="{segment === 'logout' ? 'page' : undefined}" href="auth/logout" on:click|preventDefault={logout}>log out</a></li>
+			<li><a aria-current="{segment === 'logout' ? 'page' : undefined}" href={"logout"} on:click|preventDefault={logout}>log out</a></li>
 		{:else}
-			<li><a aria-current="{segment === 'login' ? 'page' : undefined}" href="auth/login">log in</a></li>
+			<li><a aria-current="{segment === 'login' ? 'page' : undefined}" href="login">log in</a></li>
 			<li><a aria-current="{segment === 'register' ? 'page' : undefined}" href="register">register</a></li>
 		{/if}
 	</ul>
