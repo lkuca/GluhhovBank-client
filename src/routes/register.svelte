@@ -18,7 +18,7 @@
 
         if (response.user) {
             $session.user = response.user;
-            goto('auth/login');
+            goto('/');
         }
     }
 </script>
@@ -33,7 +33,7 @@
             <div class="col-md-6 offset-md-3 col-xs-12">
                 <h1 class="text-xs-center">Sign up</h1>
                 <p class="text-xs-center">
-                    <a href="auth/login">Have an account?</a>
+                    <a href="/login">Have an account?</a>
                 </p>
 
                 {#if error}
